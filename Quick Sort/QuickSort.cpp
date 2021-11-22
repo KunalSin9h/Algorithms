@@ -19,7 +19,7 @@ int partition(int arr[], int low, int high){
     int pivot = arr[high]; // pivot
     int i = (low - 1);
 
-    for(int j = low; j <= high - 1; ++j){
+    for(int j = low; j < high; ++j){
         //if current element is smaller than  the pivot
         if(arr[j] < pivot){
             i++;
@@ -37,7 +37,7 @@ high --> Ending index */
 
 void QuickSort(int arr[], int low, int high){
     if(low < high){
-        /* pi is partitioning index, arr[p] is now 
+        /* pi is partitioning index, arr[pi] is now 
         at right place */
         int pi = partition(arr, low, high);
 

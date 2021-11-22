@@ -37,7 +37,7 @@ high --> Ending index */
 
 void QuickSort(int arr[], int low, int high){
     if(low < high){
-        /* pi is partitioning index, arr[p] is now 
+        /* pi is partitioning index, arr[pi] is now 
         at right place */
         int r = rand()%(high+1) + low; // random number between low and high
         swap(&arr[low], &arr[r]);
