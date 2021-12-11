@@ -17,16 +17,16 @@ void swap(int *a, int *b){
 // Stable -> Yes
 void BubbleSort(int arr[], int n){
     bool isSorted = false;
-    int lastPass = n-1;
+    int lastInd = n-1;
     while(!isSorted){
         isSorted = true;
-        for(int i = 0;i<lastPass; ++i){
+        for(int i = 0;i<lastInd; ++i){
             if(arr[i] > arr[i+1]){
                 swap(&arr[i], &arr[i+1]);
                 isSorted = false;      
             }
         }
-        lastPass--; // Little Bit optimization
+        lastIndj--; // Little Bit optimization
     }
 }
 
