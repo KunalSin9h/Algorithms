@@ -85,7 +85,6 @@ int main(){
 			gp.unite(a, b);
 		}
 	}
-	dbg(minimum_wt);
 	cout << minimum_wt << nl;
 	
 	return 0;
