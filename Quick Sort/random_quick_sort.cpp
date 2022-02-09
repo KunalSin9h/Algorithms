@@ -40,7 +40,7 @@ void QuickSort(int arr[], int low, int high){
         /* pi is partitioning index, arr[pi] is now 
         at right place */
         int r = rand()%(high+1) + low; // random number between low and high
-        swap(&arr[low], &arr[r]);
+        swap(&arr[high], &arr[r]);
         int pi = partition(arr, low, high);
 
         // Separately sort elements before 

@@ -9,10 +9,8 @@ typedef long long ll;
 vector<vector<int>> store;
 vector<int> given;
 
-int op = 0;
 
 void all_combinations(vector<int> &b, int n, int cnt){
-    op++;
     if(cnt == n){
         store.push_back(b);
         return;
@@ -31,18 +29,13 @@ int main(){
     }
     vector<int> b;
     all_combinations(b, N, 0);
-    int op2 = 0;
     for(auto &v: store){
         cout << "[ ";
         for(int &i: v){
-            op2++;
             cout << i << " ";
         }
         cout << "]" << '\n';
     }
-
-    cout <<"Operations 1 -> " << op << '\n';
-    cout <<"Operations 2 -> " << op2 << '\n';
     return 0;
 }
 

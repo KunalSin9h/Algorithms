@@ -25,7 +25,7 @@ int main(){
 	}
 	for(int i = 1;i<=N; ++i){
 		for(int j = 1;j<=max_val;++j){
-			if(a[i][1] <= j){
+			if(j >= a[i][1]){
 				dp[i][j] = min(dp[i-1][j], a[i][0] + dp[i-1][j-a[i][1]]);
 			}else{
 				dp[i][j] = dp[i-1][j];
@@ -35,7 +35,7 @@ int main(){
 	int ans = 0;
 	for(int j = 1;j<=max_val; ++j){
 		if(dp[N][j] <= W){
-			ans = max(ans, j);
+			ans = j;
 		}
 	}
 	cout << ans << '\n';

@@ -18,7 +18,7 @@ int partition(int arr[], int low, int high){
     int pivot = arr[high]; // pivot
     int i = (low - 1);
 
-    for(int j = low; j < high; ++j){
+    for(int j = low; j < high; ++j){ // high is pivot i.e not upto high
         //if current element is smaller than  the pivot
         if(arr[j] < pivot){
             i++;
@@ -48,7 +48,6 @@ void QuickSort(int arr[], int low, int high){
 }
 
 // function to print the array
-
 void print(int a[], int size){
     for(int i = 0;i<size; ++i){
         cout << a[i] << " ";
@@ -61,7 +60,7 @@ int main(){
     int arr[] = {10, 7, 8, 9, 1, 5, 1, 34, 34, 54};
     int n = sizeof(arr)/sizeof(arr[0]);
 
-    QuickSort(arr, 0, n-1);
+    QuickSort(arr, 0, n-1); // QuickSort on entire array
     cout << "Sorted Array" << endl;
     print(arr, n);
     

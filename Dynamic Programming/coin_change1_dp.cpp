@@ -1,6 +1,8 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+constexpr int inf = 2e9;
+
 int main(){
     cin.tie(0)->sync_with_stdio(0);
 	int d, a;
@@ -9,7 +11,7 @@ int main(){
 	vector<int> coins(d);
 	for(int &i: coins)cin >> i;
 	// Bottom-Up dp
-	vector<int64_t> dp(a+1, INT_MAX);
+	vector<int64_t> dp(a+1, inf);
 
 	dp[0] = 0;
 
@@ -20,7 +22,7 @@ int main(){
 			}
 		}
 	}
-	if(dp[a] == INT_MAX)cout << -1 << '\n';
+	if(dp[a] == inf)cout << -1 << '\n';
 	else cout << dp[a] << '\n';
 
     return 0;

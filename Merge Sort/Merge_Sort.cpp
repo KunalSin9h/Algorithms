@@ -1,7 +1,6 @@
 #include <iostream>
 using namespace std;
 
-typedef long long ll;
 
 void Merge(int arr[], int l, int mid, int r){
     int one = mid - l + 1 ;

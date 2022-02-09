@@ -8,8 +8,7 @@ int main(){
     vector<int> a(n), dp(n);
     for(int &i: a)cin >> i;
 
-    dp[0] = 1;
-
+    dp[0] = 1; // Lenght of LIS ending with 0'th element of the array
     for(int i = 1;i<n; ++i){
         bool ch = false;
         for(int j = i-1; j>=0; --j){
@@ -21,6 +20,6 @@ int main(){
         }
         if(!ch)dp[i] = 1;
     }
-    cout << dp[n-1] << '\n';
+    cout << *max_element(begin(dp), end(dp)) << '\n';
     return 0;
 }

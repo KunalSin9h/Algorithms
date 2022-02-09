@@ -7,7 +7,7 @@ vector<int> arr, memo;
 
 /*
 * Find The length of the longest subseq formed by element of given position 
-* ONLY BRUT-FORCE
+* ONLY BRUT-FORCE + Memoization -> Recursive DP
 */
 int F(int pos){
 	if(memo[pos] != -1)return memo[pos];
@@ -25,8 +25,8 @@ int main(){
 	memo.resize(n, -1);
 	memo[0] = 1;
 	for(int i = 0;i<n; ++i)cin >> arr[i];
-	int ans = 1;
 
+	int ans = 1;
 	for(int i = 0; i<n; ++i){
 		ans = max(ans, F(i));
 	}

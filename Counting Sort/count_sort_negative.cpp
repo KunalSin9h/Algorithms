@@ -30,7 +30,7 @@ int *CountSort(int a[], int n, int l, int h){
 int main(){
     int n; cin >> n;
     int a[n];
-    int l = 1e9;
+    int l = 9e9;
     int h = -1;
     for(int i = 0;i<n; ++i){
         cin >> a[i];
@@ -41,7 +41,7 @@ int main(){
     for(int i = 0;i<n; ++i){
         cout << out[i] << ' ';
     }
-    cout << endl;
+    cout << '\n';
     delete [] out;
     return 0;
 }

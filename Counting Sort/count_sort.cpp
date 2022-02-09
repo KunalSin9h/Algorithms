@@ -16,11 +16,9 @@ int *CountSort(int a[], int n,int m){
         count[i] += count[i-1];
     }
     int *output = new int[n];
-    //int output[n];
     for(int i = n-1; i>=0; i--){
-        output[(count[a[i]]) - 1] = a[i];
         count[a[i]]--;
-        
+        output[count[a[i]]] = a[i];
     }
     return output;
 }
@@ -38,7 +36,7 @@ int main(){
     for(int i = 0;i<n; ++i){
         cout << out[i] << " " ;
     }
-    cout << endl;
+    cout << '\n';
     delete [] out;
     return 0;
 }

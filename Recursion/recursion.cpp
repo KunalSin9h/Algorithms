@@ -24,8 +24,6 @@ void generator(vector<int> &a, int bit, int i){
     generator(a, bit, i + 1);
     a[i] = 1;
     generator(a, bit, i + 1);
-    a[i] = 2;
-    generator(a, bit, i + 1);
 }
 
 int main(){

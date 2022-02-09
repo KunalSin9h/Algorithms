@@ -30,7 +30,7 @@ int main(){
 	
 	for(int i = 1;i<=N; ++i){
 		for(int j = 1;j<=W; ++j){
-			if(a[i][0] <= j){
+			if(j >= a[i][0]){
 				dp[i][j] = max(dp[i-1][j] , a[i][1] + dp[i-1][j-a[i][0]]);
 			}else{
 				dp[i][j] = dp[i-1][j];
