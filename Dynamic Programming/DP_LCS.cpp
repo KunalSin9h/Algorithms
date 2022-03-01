@@ -8,6 +8,7 @@ using namespace std;
     and concatenating the remaining characters without changing the order
 */
 
+/* ITERATIVE */
 
 int main(){
     string S, T;
@@ -32,6 +33,8 @@ int main(){
 			}
 		}
 	}
+	cout << dp[a][b] << '\n';
+	/*
     string ans;
 	int i = a, j = b;	
 	while(i > 0 && j > 0){
@@ -53,6 +56,6 @@ int main(){
 		cout << ans[i];
 	}
 	cout << '\n';
-
+	*/
     return 0;
 }

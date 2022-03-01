@@ -9,5 +9,5 @@ def QuickSort(vec):
         
         return QuickSort(less) + [pivote] + QuickSort(greater)
 
-l = [10, 9, 8, 7, 6, 5, 4, 3, 2, 1];
+l = [10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
 print(QuickSort(l))
