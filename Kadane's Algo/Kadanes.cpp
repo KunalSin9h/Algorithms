@@ -1,5 +1,6 @@
 // Kadane's algo to find the subseq with max_sum
 // Time -> O(n)
+// Limitatin: Does not work(need adjustment) in case of all negative
 
 #include <iostream>
 using namespace std;
