@@ -1,1 +1,17 @@
 When to Apply Two Pointers:
+
+Assume there is a "good segment" we have to find longest , shotest, number of ... etc "good segment" then.
+
+1. First let there is a good segment l-r then if we have segment l` - r` such that it is also good, whether it is inside
+or outside the l-r then we can consider TWO-Pointers
+
+and
+
+2. (Notic that we have to `add`, `remove` and `check the goodness` of the segment) so if it is possible to 
+ do this kind of stuff then only we can consider TWO-Pointers
+
+
+Applying  Both Checks We can solve the question using Two-Pointers
+
+
+*for best example see. "E_Segment_with_Small_Set.cpp" in this directory
