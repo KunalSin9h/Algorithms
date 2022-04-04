@@ -21,6 +21,16 @@ int Euclid_2(int a, int b){
     else return Euclid_2(a, b - a);
 }
 
+int Euclid_3(int a, int b){
+    int c;
+    while(b){
+        c = b;
+        b = a%b;
+        a = c;
+    }
+    return a;
+}
+
 int main(){
     cin.tie(0)->sync_with_stdio(0);
     return 0;
