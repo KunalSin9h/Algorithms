@@ -19,7 +19,7 @@ int inverse(int a, int b){
     int x = 0, y = 0;
     int d = Extended_Euclid(a, b, &x, &y);
     if(d == 1)
-        return x;
+        return (x + a)%b;
     return  -1; // Inverse Not Possible
 }
 

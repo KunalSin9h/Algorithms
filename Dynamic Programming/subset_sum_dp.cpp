@@ -21,7 +21,7 @@ int main(){
     for(int i = 1;i<=N; ++i){
         for(int j = 1;j<=X; ++j){
             dp[i][j] = dp[i-1][j];
-            if(j >= v[i-1])
+            if(j >= v[i-1]) // v[i-1] bcoz i is 1 based
                 dp[i][j] = dp[i][j] | dp[i-1][j - v[i-1]];
         }
     }
