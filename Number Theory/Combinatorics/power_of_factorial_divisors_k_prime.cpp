@@ -1,4 +1,8 @@
 #include <iostream>
+#include <vector>
+#include <cassert>
+#include <algorithm>
+#include <cstdlib>
 using namespace std;
 
 /**
@@ -6,7 +10,7 @@ using namespace std;
  **/
 
 // when k is prime
-int fact_pow(int n, int k){
+int fact_pow(int n , int k){
     int res = 0;
     while(n){
         n /= k;
